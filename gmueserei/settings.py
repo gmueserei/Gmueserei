@@ -13,11 +13,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '8cd-j&jo=-#ecd1jjulp_s*7y$n4tad(0d_g)l=6@n^r8fg3rn'
 
-<<<<<<< HEAD
-DEBUG = os.environ.get("JUNTAGRICO_DEBUG", "True")
-=======
 DEBUG = os.environ.get("JUNTAGRICO_DEBUG", "True") == "True"
->>>>>>> 
+
 
 ALLOWED_HOSTS = ['mini.gmueserei.ch', 'localhost',]
 
