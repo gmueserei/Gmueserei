@@ -18,6 +18,11 @@ DEBUG = os.environ.get("JUNTAGRICO_DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = ['mini.gmueserei.ch', 'localhost',]
 
+ADMINS = (
+    ('Admin', os.environ.get('JUNTAGRICO_ADMIN_EMAIL')),
+    ('Error', os.environ.get('JUNTAGRICO_ERROR_EMAIL')),
+)
+MANAGERS = ADMINS
 
 # Application definition
 
@@ -127,7 +132,7 @@ if DEBUG is True:
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-IMPERSONATE_REDIRECT_URL = "/my/profil"
+IMPERSONATE_REDIRECT_URL = "/my/profile"
 
 LOGIN_REDIRECT_URL = "/my/home"
 
@@ -183,14 +188,14 @@ DEPOT_LIST_GENERATION_DAYS = [1,2,3,4,5,6,7]
 BILLING = False
 BUSINESS_YEAR_START = {"day":1, "month":1}
 BUSINESS_YEAR_CANCELATION_MONTH = 10
-IMAGES = {'status_100': '/static/img/erbse_voll.png',
-            'status_75': '/static/img/erbse_fast_voll.png',
-            'status_50': '/static/img/erbse_halb.png',
-            'status_25': '/static/img/erbse_fast_leer.png',
-            'status_0': '/static/img/erbse_leer.png',
-            'single_full': '/static/img/erbse_voll.png',
-            'single_empty': '/static/img/erbse_leer.png',
-            'single_core': '/static/img/erbse_voll_kernbereich.png',
-            'core': '/static/img/erbse_voll_kernbereich.png'
+IMAGES = {'status_100': '/static/img/status_100.png',
+            'status_75': '/static/img/status_75.png',
+            'status_50': '/static/img/status_50.png',
+            'status_25': '/static/img/status_25.png',
+            'status_0': '/static/img/status_0.png',
+            'single_full': '/static/img/single_full.png',
+            'single_empty': '/static/img/single_empty.png',
+            'single_core': '/static/img/single_core.png',
+            'core': '/static/img/core.png'
 }
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
