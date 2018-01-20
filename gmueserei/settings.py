@@ -167,7 +167,7 @@ ORGANISATION_BANK_CONNECTION = {"PC" : "PC Number",
             "BIC" : "BIC",
             "NAME" : "Bank Name",
             "ESR" : "ESR Number"}
-INFO_EMAIL = "info@gmueserei.ch"
+INFO_EMAIL = "mini@gmueserei.ch"
 SERVER_URL = "gmueserei.ch"
 ADMINPORTAL_NAME = "mini.gmueserei"
 ADMINPORTAL_SERVER_URL = "mini.gmueserei.ch"
