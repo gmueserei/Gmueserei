@@ -161,11 +161,11 @@ ORGANISATION_ADDRESS = {"name":"Genossenschaft GMÜESEREI SISSACH",
             "number" : "25e",
             "zip" : "4450",
             "city" : "Sissach",
-            "extra" : "Address Extra"}
+            "extra" : ""}
 ORGANISATION_BANK_CONNECTION = {"PC" : "PC Number",
-            "IBAN" : "IBAN",
-            "BIC" : "BIC",
-            "NAME" : "Bank Name",
+            "IBAN" : "CH1408390035190010009",
+            "BIC" : "ABSOCH22",
+            "NAME" : "Alternative Bank Schweiz",
             "ESR" : "ESR Number"}
 INFO_EMAIL = "mini@gmueserei.ch"
 SERVER_URL = "gmueserei.ch"
