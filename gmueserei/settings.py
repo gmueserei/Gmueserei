@@ -156,7 +156,7 @@ MEDIA_URL = 'https://%s.s3.amazonaws.com/' % AWS_STORAGE_BUCKET_NAME
 
 MEMBER_STRING = "Mitglied"
 MEMBERS_STRING = "Mitglieder"
-ASSIGNMENT_STRING = "Mitglied"
+ASSIGNMENT_STRING = "Arbeitseinsatz"
 ASSIGNMENTS_STRING = "Arbeitseinsätze"
 ORGANISATION_NAME = "Gmüeserei"
 ORGANISATION_LONG_NAME = "Genossenschaft GMÜESEREI SISSACH"
