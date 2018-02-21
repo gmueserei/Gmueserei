@@ -98,13 +98,14 @@ AUTHENTICATION_BACKENDS = (
 )
 
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-)
+    'impersonate.middleware.ImpersonateMiddleware'
+]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
 EMAIL_HOST_USER = os.environ.get('JUNTAGRICO_EMAIL_USER')
@@ -133,7 +134,9 @@ if DEBUG is True:
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
-IMPERSONATE_REDIRECT_URL = "/my/profile"
+IMPERSONATE = {
+    'REDIRECT_URL': '/my/profile',
+}
 
 LOGIN_REDIRECT_URL = "/my/home"
 
@@ -172,14 +175,14 @@ INFO_EMAIL = "mini@gmueserei.ch"
 SERVER_URL = "gmueserei.ch"
 ADMINPORTAL_NAME = "mini.gmueserei"
 ADMINPORTAL_SERVER_URL = "mini.gmueserei.ch"
-BUSINESS_REGULATIONS = "/static/docs/business_regulations.pdf"
+BUSINESS_REGULATIONS = ""
 BYLAWS = "https://gmueserei.ch/media/Gmueserei_Sissach_Statuten.pdf"
 STYLE_SHEET = "/static/css/personal.css"
 BOOTSTRAP = "/static/external/bootstrap-3.3.1/css/bootstrap.min.css"
 FAVICON = "/static/img/favicono.ico"
-FAQ_DOC = "/static/doc/fac.pdf"
-EXTRA_SUB_INFO = "/static/doc/extra_sub_info.pdf"
-ACTIVITY_AREA_INFO = "/static/doc/activity_area_info.pdf"
+FAQ_DOC = ""
+EXTRA_SUB_INFO = ""
+ACTIVITY_AREA_INFO = ""
 SHARE_PRICE = "250"
 PROMOTED_JOB_TYPES = []
 PROMOTED_JOBS_AMOUNT = 2
@@ -199,4 +202,20 @@ IMAGES = {'status_100': '/static/img/status_100.png',
             'single_core': '/static/img/single_core.png',
             'core': '/static/img/core.png'
 }
+EMAILS = {
+    'welcome': 'sueri_emails/welcome.txt',
+    'co_welcome': 'mails/welcome_added_mail.txt',
+    'password': 'mails/password_reset_mail.txt',
+    'j_reminder': 'mails/job_reminder_mail.txt',
+    'j_canceled': 'mails/job_canceled_mail.txt',
+    'confirm': 'mails/confirm.txt',
+    'j_changed': 'mails/job_time_changed_mail.txt',
+    'j_signup': 'mails/job_signup_mail.txt',
+    'd_changed': 'mails/depot_changed_mail.txt',
+    's_canceled': 'mails/subscription_canceled_mail.txt',
+    'b_share': 'mails/bill_share.txt',
+    'b_sub': 'mails/bill_sub.txt',
+    'b_esub': 'mails/bill_extrasub.txt'
+}
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+BASE_FEE=''
