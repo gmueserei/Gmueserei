@@ -148,6 +148,8 @@ try:
 except KeyError:
     raise KeyError('Need to define AWS environment variables: ' +
                    'JUNTAGRICO_AWS_KEY_ID, JUNTAGRICO_AWS_KEY, and JUNTAGRICO_AWS_BUCKET_NAME')
+AWS_S3_HOST = 's3.eu-central-1.amazonaws.com'
+S3_USE_SIGV4 = True
 
 # Default Django Storage API behavior - don't overwrite files with same name
 AWS_S3_FILE_OVERWRITE = False
@@ -186,8 +188,6 @@ ACTIVITY_AREA_INFO = ""
 SHARE_PRICE = "250"
 PROMOTED_JOB_TYPES = []
 PROMOTED_JOBS_AMOUNT = 2
-DEPOT_LIST_COVER_SHEETS = 'x'
-DEPOT_LIST_OVERVIEWS = 'x'
 DEPOT_LIST_GENERATION_DAYS = [1,2,3,4,5,6,7]	
 BILLING = False
 BUSINESS_YEAR_START = {"day":1, "month":1}
