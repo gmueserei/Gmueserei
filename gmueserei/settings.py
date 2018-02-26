@@ -203,7 +203,7 @@ IMAGES = {'status_100': '/static/img/status_100.png',
             'core': '/static/img/core.png'
 }
 EMAILS = {
-    'welcome': 'sueri_emails/welcome.txt',
+    'welcome': 'mails/welcome.txt',
     'co_welcome': 'mails/welcome_added_mail.txt',
     'password': 'mails/password_reset_mail.txt',
     'j_reminder': 'mails/job_reminder_mail.txt',
