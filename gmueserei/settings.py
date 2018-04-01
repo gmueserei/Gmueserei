@@ -200,7 +200,7 @@ IMAGES = {'status_100': '/static/img/status_100.png',
             'single_full': '/static/img/single_full.png',
             'single_empty': '/static/img/single_empty.png',
             'single_core': '/static/img/single_core.png',
-            'core': '/static/img/core.png'
+            'core': '/static/gm/img/core.png'
 }
 EMAILS = {
     'welcome': 'mails/welcome.txt',
