@@ -8,7 +8,7 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Zurich'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '8cd-j&jo=-#ecd1jjulp_s*7y$n4tad(0d_g)l=6@n^r8fg3rn'
