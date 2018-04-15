@@ -212,4 +212,4 @@ EMAILS = {
     'b_esub': 'mails/bill_extrasub.txt'
 }
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
-BASE_FEE=''
+BASE_FEE='50'
