@@ -18,7 +18,7 @@ DEBUG = os.environ.get("JUNTAGRICO_DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = ['mini.gmueserei.ch', 'localhost',]
 
-ECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = True
 SECURE_HSTS_SECONDS = 3600
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
