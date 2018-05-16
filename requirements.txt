@@ -1,6 +1,6 @@
 git+http://github.com/ortoloco/juntagrico.git
 boto==2.48.0
-django-storages==1.6.5
+git+https://github.com/jschneier/django-storages.git#egg=django-storages
 gunicorn==19.7.1
 psycopg2>2.5.1
 dj-static==0.0.6
