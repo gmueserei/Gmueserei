@@ -167,7 +167,7 @@ ORGANISATION_ADDRESS = {"name":"Genossenschaft GMÜESEREI SISSACH",
             "zip" : "4450",
             "city" : "Sissach",
             "extra" : ""}
-ORGANISATION_BANK_CONNECTION = {"PC" : "PC Number",
+ORGANISATION_BANK_CONNECTION = {"PC" : " ",
             "IBAN" : "CH1408390035190010009",
             "BIC" : "ABSOCH22",
             "NAME" : "Alternative Bank Schweiz",
@@ -202,19 +202,19 @@ IMAGES = {'status_100': '/static/img/status_100.png',
             'core': '/static/img/core.png'
 }
 EMAILS = {
-    'welcome': 'mails/welcome_mail.txt',
-    'co_welcome': 'mails/welcome_added_mail.txt',
-    'password': 'mails/password_reset_mail.txt',
-    'j_reminder': 'mails/job_reminder_mail.txt',
-    'j_canceled': 'mails/job_canceled_mail.txt',
-    'confirm': 'mails/confirm.txt',
-    'j_changed': 'mails/job_time_changed_mail.txt',
-    'j_signup': 'mails/job_signup_mail.txt',
-    'd_changed': 'mails/depot_changed_mail.txt',
-    's_canceled': 'mails/subscription_canceled_mail.txt',
-    'b_share': 'mails/bill_share.txt',
-    'b_sub': 'mails/bill_sub.txt',
-    'b_esub': 'mails/bill_extrasub.txt'
+    'welcome': '/templates/mailsgm/welcome_mail.txt',
+    'co_welcome': '/templates/mailsgm/welcome_added_mail.txt',
+    'password': '/templates/mailsgm/password_reset_mail.txt',
+    'j_reminder': '/templates/mailsgm/job_reminder_mail.txt',
+    'j_canceled': '/templates/mailsgm/job_canceled_mail.txt',
+    'confirm': '/templates/mailsgm/confirm.txt',
+    'j_changed': '/templates/mailsgm/job_time_changed_mail.txt',
+    'j_signup': '/templates/mailsgm/job_signup_mail.txt',
+    'd_changed': '/templates/mailsgm/depot_changed_mail.txt',
+    's_canceled': '/templates/mailsgm/subscription_canceled_mail.txt',
+    'b_share': '/templates/mailsgm/bill_share.txt',
+    'b_sub': '/templates/mailsgm/bill_sub.txt',
+    'b_esub': '/templates/mailsgm/bill_extrasub.txt'
 }
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 BASE_FEE='50'
