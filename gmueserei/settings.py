@@ -189,8 +189,8 @@ PROMOTED_JOB_TYPES = []
 PROMOTED_JOBS_AMOUNT = 2
 DEPOT_LIST_GENERATION_DAYS = []	
 BILLING = False
-BUSINESS_YEAR_START = {"day":1, "month":1}
-BUSINESS_YEAR_CANCELATION_MONTH = 10
+BUSINESS_YEAR_START = {"day":1, "month":6}
+BUSINESS_YEAR_CANCELATION_MONTH = 2
 IMAGES = {'status_100': '/static/img/status_100.png',
             'status_75': '/static/img/status_75.png',
             'status_50': '/static/img/status_50.png',
