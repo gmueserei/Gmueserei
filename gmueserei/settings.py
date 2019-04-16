@@ -82,7 +82,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'gmueserei.wsgi.application'
 
 
-LANGUAGE_CODE = 'de_CH'
+LANGUAGE_CODE = 'de-ch'
 
 SITE_ID = 1
 
