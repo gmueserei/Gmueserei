@@ -13,18 +13,14 @@ TIME_ZONE = 'Europe/Zurich'
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '8cd-j&jo=-#ecd1jjulp_s*7y$n4tad(0d_g)l=6@n^r8fg3rn'
 
-DEBUG = os.environ.get("JUNTAGRICO_DEBUG", "True") == "True"
+DEBUG = os.environ.get("JUNTAGRICO_DEBUG", "False") == "True"
 
 
 ALLOWED_HOSTS = ['mini.gmueserei.ch', 'localhost',]
 
-SECURE_SSL_REDIRECT = True
-SECURE_HSTS_SECONDS = 3600
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 
 ADMINS = (
     ('Admin', os.environ.get('JUNTAGRICO_ADMIN_EMAIL')),
-    ('Error', os.environ.get('JUNTAGRICO_ERROR_EMAIL')),
 )
 MANAGERS = ADMINS
 
@@ -72,7 +68,6 @@ TEMPLATES = [
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
                 'django.template.loaders.app_directories.Loader',
-                'juntagrico.personalisation.loaders.personal_directories.Loader'
             ],
             'debug' : True
         },
@@ -82,7 +77,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'gmueserei.wsgi.application'
 
 
-LANGUAGE_CODE = 'de_CH'
+LANGUAGE_CODE = 'de-ch'
 
 SITE_ID = 1
 
@@ -145,12 +140,6 @@ IMPERSONATE = {
 
 LOGIN_REDIRECT_URL = "/my/home"
 
-DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-try:
-    DROPBOX_OAUTH2_TOKEN = os.environ['JUNTAGRICO_DROPBOX_TOKEN']
-except KeyError:
-    raise KeyError('Need to define Dropbox environment variables: ' +
-                   'JUNTAGRICO_DROPBOX_TOKEN')
 
 # Default Django Storage API behavior - don't overwrite files with same name
 MEDIA_ROOT = 'media'
@@ -179,7 +168,6 @@ ADMINPORTAL_SERVER_URL = "mini.gmueserei.ch"
 BUSINESS_REGULATIONS = ""
 BYLAWS = "https://gmueserei.ch/media/Gmueserei_Sissach_Statuten.pdf"
 STYLE_SHEET = "/static/gm/css/personal.css"
-BOOTSTRAP = "/static/external/bootstrap-3.3.1/css/bootstrap.min.css"
 FAVICON = "/static/img/favicono.ico"
 FAQ_DOC = ""
 EXTRA_SUB_INFO = ""
