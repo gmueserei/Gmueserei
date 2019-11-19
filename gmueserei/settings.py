@@ -146,12 +146,6 @@ IMPERSONATE = {
 
 LOGIN_REDIRECT_URL = "/my/home"
 
-DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
-try:
-    DROPBOX_OAUTH2_TOKEN = os.environ['JUNTAGRICO_DROPBOX_TOKEN']
-except KeyError:
-    raise KeyError('Need to define Dropbox environment variables: ' +
-                   'JUNTAGRICO_DROPBOX_TOKEN')
 
 # Default Django Storage API behavior - don't overwrite files with same name
 MEDIA_ROOT = 'media'
