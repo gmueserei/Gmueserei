@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'juntagrico',
     'impersonate',
     'gmueserei',
+    'crispy_forms'
 ]
 
 ROOT_URLCONF = 'gmueserei.urls'
@@ -206,3 +207,5 @@ EMAILS = {
 }
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 BASE_FEE='50'
+
+CRISPY_TEMPLATE_PACK = ‘bootstrap4’
