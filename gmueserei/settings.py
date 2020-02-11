@@ -191,19 +191,9 @@ IMAGES = {'status_100': '/static/img/status_100.png',
             'core': '/static/img/core.png'
 }
 EMAILS = {
-    'welcome': 'mailsgm/welcome_mail.txt',
-    'co_welcome': 'mailsgm/welcome_added_mail.txt',
-    'password': 'mailsgm/password_reset_mail.txt',
-    'j_reminder': 'mailsgm/job_reminder_mail.txt',
-    'j_canceled': 'mailsgm/job_canceled_mail.txt',
-    'confirm': 'mailsgm/confirm.txt',
-    'j_changed': 'mailsgm/job_time_changed_mail.txt',
-    'j_signup': 'mailsgm/job_signup_mail.txt',
-    'd_changed': 'mailsgm/depot_changed_mail.txt',
-    's_canceled': 'mailsgm/subscription_canceled_mail.txt',
-    'b_share': 'mailsgm/bill_share.txt',
-    'b_sub': 'mailsgm/bill_sub.txt',
-    'b_esub': 'mailsgm/bill_extrasub.txt'
+    'b_share': 'mails/bill_share.txt',
+    'b_sub': 'mails/bill_sub.txt',
+    'b_esub': 'mails/bill_extrasub.txt'
 }
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 BASE_FEE='50'
