@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'juntagrico',
     'impersonate',
     'gmueserei',
-    'crispy_forms'
+    'crispy_forms',
+    'adminsortable2'
 ]
 
 ROOT_URLCONF = 'gmueserei.urls'
@@ -182,15 +183,15 @@ DEPOT_LIST_GENERATION_DAYS = []
 BILLING = False
 BUSINESS_YEAR_START = {"day":1, "month":6}
 BUSINESS_YEAR_CANCELATION_MONTH = 2
-IMAGES = {'status_100': '/static/img/status_100.png',
-            'status_75': '/static/img/status_75.png',
-            'status_50': '/static/img/status_50.png',
-            'status_25': '/static/img/status_25.png',
-            'status_0': '/static/img/status_0.png',
-            'single_full': '/static/img/single_full.png',
-            'single_empty': '/static/img/single_empty.png',
-            'single_core': '/static/img/single_core.png',
-            'core': '/static/img/core.png'
+IMAGES = {'status_100': '/static/juntagrico/img/status_100.png',
+            'status_75': '/static/juntagrico/img/status_75.png',
+            'status_50': '/static/juntagrico/img/status_50.png',
+            'status_25': '/static/juntagrico/img/status_25.png',
+            'status_0': '/static/juntagrico/img/status_0.png',
+            'single_full': '/static/juntagrico/img/single_full.png',
+            'single_empty': '/static/juntagrico/img/single_empty.png',
+            'single_core': '/static/juntagrico/img/single_core.png',
+            'core': '/static/juntagrico/img/core.png'
 }
 EMAILS = {
     'b_share': 'mails/bill_share.txt',
