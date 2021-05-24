@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'juntagrico',
     'impersonate',
     'gmueserei',
-    'crispy_forms',
-    'adminsortable2'
+    'crispy_forms'
 ]
 
 ROOT_URLCONF = 'gmueserei.urls'
