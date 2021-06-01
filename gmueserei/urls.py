@@ -19,7 +19,7 @@ import juntagrico
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('juntagrico.urls')),
-    url(r"^", include("juntagrico_billing.urls")),
+    # url(r"^", include("juntagrico_billing.urls")),
     url(r'^$', juntagrico.views.home),
     url(r'^impersonate/', include('impersonate.urls')),
 ]
