@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'gmueserei',
     'crispy_forms',
     'adminsortable2',
-    'juntagrico_billing',
+    # 'juntagrico_billing',
 ]
 
 ROOT_URLCONF = 'gmueserei.urls'
@@ -203,4 +203,4 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 BASE_FEE='50'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-BILLS_USERMENU = False
+# BILLS_USERMENU = False
