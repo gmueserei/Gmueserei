@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'gmueserei',
     'crispy_forms',
     'adminsortable2',
+    'polymorphic'
     # 'juntagrico_billing',
 ]
 
@@ -110,7 +111,8 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'impersonate.middleware.ImpersonateMiddleware'
+    'impersonate.middleware.ImpersonateMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware'
 ]
 
 EMAIL_HOST = os.environ.get('JUNTAGRICO_EMAIL_HOST')
@@ -173,7 +175,7 @@ ADMINPORTAL_NAME = "mini.gmueserei"
 ADMINPORTAL_SERVER_URL = "mini.gmueserei.ch"
 BUSINESS_REGULATIONS = ""
 BYLAWS = "https://gmueserei.ch/media/GmuesereiStatuten_rev20180516.pdf"
-STYLE_SHEET = "/static/gm/css/personal.css"
+STYLES = {'static': ['gm/css/personal.css']}
 FAVICON = "/static/img/favicono.ico"
 FAQ_DOC = ""
 EXTRA_SUB_INFO = ""
@@ -204,4 +206,6 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 BASE_FEE='50'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 # BILLS_USERMENU = False
