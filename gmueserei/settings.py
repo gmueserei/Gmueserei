@@ -171,8 +171,6 @@ ORGANISATION_BANK_CONNECTION = {"PC" : " ",
             "ESR" : "ESR Number"}
 INFO_EMAIL = "mini@gmueserei.ch"
 SERVER_URL = "gmueserei.ch"
-ADMINPORTAL_NAME = "mini.gmueserei"
-ADMINPORTAL_SERVER_URL = "mini.gmueserei.ch"
 BUSINESS_REGULATIONS = ""
 BYLAWS = "https://gmueserei.ch/media/GmuesereiStatuten_rev20180516.pdf"
 STYLES = {'static': ['gm/css/personal.css']}
