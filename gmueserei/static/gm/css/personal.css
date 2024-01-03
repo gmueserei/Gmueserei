@@ -6,3 +6,8 @@
     width: 580px;
     height: 161px;
 }
+body {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  color: #5d4a3e;
+  background-color: #f5f1ec;
+}
