@@ -160,7 +160,7 @@ ORGANISATION_NAME = "Gmüeserei"
 ORGANISATION_LONG_NAME = "Genossenschaft GMÜESEREI SISSACH"
 ORGANISATION_ADDRESS = {"name":"Genossenschaft GMÜESEREI SISSACH", 
             "street" : "Ebenrainweg",
-            "number" : "25e",
+            "number" : "25f",
             "zip" : "4450",
             "city" : "Sissach",
             "extra" : ""}
@@ -172,7 +172,7 @@ ORGANISATION_BANK_CONNECTION = {"PC" : " ",
 INFO_EMAIL = "mini@gmueserei.ch"
 SERVER_URL = "gmueserei.ch"
 BUSINESS_REGULATIONS = ""
-BYLAWS = "https://gmueserei.ch/media/GmuesereiStatuten_rev20180516.pdf"
+BYLAWS = "https://www.gmueserei.ch/index.php?page=dokumente"
 STYLES = {'static': ['gm/css/personal.css']}
 FAVICON = {'static': ['img/favicono.ico']}
 FAQ_DOC = ""
