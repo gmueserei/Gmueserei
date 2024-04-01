@@ -183,7 +183,7 @@ PROMOTED_JOB_TYPES = []
 PROMOTED_JOBS_AMOUNT = 2
 DEPOT_LIST_GENERATION_DAYS = [1,3]	
 BILLING = False
-BUSINESS_YEAR_START = {"day":0, "month":0}
+BUSINESS_YEAR_START = {"day":1, "month":1}
 BUSINESS_YEAR_CANCELATION_MONTH = 9
 IMAGES = {'status_100': '/static/juntagrico/img/status_100.png',
             'status_75': '/static/juntagrico/img/status_75.png',
