@@ -10,13 +10,16 @@ html, body {
 
 /* mark tables */
 tr.odd {
-  background-color: #f1f1f1;
+  background-color: #f1f1f1 !important;
 }
 
 tr.even {
-  background-color: transparent;
+  background-color: #fefefe !important;
 }
 
+td {
+  border: 1px solid #5d4a3e;
+}
 
 /* activity list */
 div.activity-area-list-element {
