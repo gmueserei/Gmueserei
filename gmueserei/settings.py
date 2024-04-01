@@ -200,6 +200,12 @@ EMAILS = {
     'b_sub': 'mails/bill_sub.txt',
     'b_esub': 'mails/bill_extrasub.txt'
 }
+DEFAULT_MAILER = 'juntagrico.util.mailer.default.Mailer'
+BATCH_MAILER = {
+    'batch_size': 30,
+    'wait_time': 65
+}
+
 GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 BASE_FEE='50'
 
