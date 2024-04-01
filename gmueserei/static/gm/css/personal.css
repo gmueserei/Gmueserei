@@ -6,3 +6,32 @@
     width: 580px;
     height: 161px;
 }
+
+/****************************************/
+/* Settings for Gmueserei look and feel */
+
+html, body {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  color: #5d4a3e;
+  background-color: #f4f1ed;
+}
+
+
+/* mark tables */
+tr.odd {
+  background-color: #f1f1f1;
+}
+
+tr.even {
+  background-color: #fefefe;
+}
+
+
+td {
+  border: 1px solid #5d4a3e;
+}
+
+/* activity list */
+div.activity-area-list-element {
+padding-bottom: 2em;
+}
