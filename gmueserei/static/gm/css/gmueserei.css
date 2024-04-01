@@ -17,12 +17,6 @@ tr.even {
   background-color: #fefefe;
 }
 
-td {
-  border-width: 1px;
-  border-style: solid;
-  border-color: #5d4a3e;
-}
-
 /* activity list */
 div.activity-area-list-element {
 padding-bottom: 2em;
