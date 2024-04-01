@@ -174,7 +174,7 @@ SERVER_URL = "gmueserei.ch"
 BUSINESS_REGULATIONS = ""
 BYLAWS = "https://www.gmueserei.ch/index.php?page=dokumente"
 STYLES = {'static': ['gm/css/personal.css','gm/css/gmueserei.css']}
-FAVICON = {'static': ['img/favicono.ico']}
+FAVICON = {'static': ['img/favicon.ico']}
 FAQ_DOC = ""
 EXTRA_SUB_INFO = ""
 ACTIVITY_AREA_INFO = ""
