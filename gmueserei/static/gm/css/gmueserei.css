@@ -18,7 +18,9 @@ tr.even {
 }
 
 td {
-  border: 1px solid #5d4a3e;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #5d4a3e;
 }
 
 /* activity list */
