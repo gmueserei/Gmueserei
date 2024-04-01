@@ -152,8 +152,8 @@ LOGIN_REDIRECT_URL = "/my/home"
 # Default Django Storage API behavior - don't overwrite files with same name
 MEDIA_ROOT = 'media'
 
-MEMBER_STRING = "Mitglied"
-MEMBERS_STRING = "Mitglieder"
+MEMBER_STRING = "Genossenschafter:in"
+MEMBERS_STRING = "Genossenschafter:innen"
 ASSIGNMENT_STRING = "Arbeitseinsatz"
 ASSIGNMENTS_STRING = "Arbeitseinsätze"
 ORGANISATION_NAME = "Gmüeserei"
@@ -181,9 +181,9 @@ ACTIVITY_AREA_INFO = ""
 SHARE_PRICE = "250"
 PROMOTED_JOB_TYPES = []
 PROMOTED_JOBS_AMOUNT = 2
-DEPOT_LIST_GENERATION_DAYS = []	
+DEPOT_LIST_GENERATION_DAYS = [1,3]	
 BILLING = False
-BUSINESS_YEAR_START = {"day":1, "month":1}
+BUSINESS_YEAR_START = {"day":0, "month":0}
 BUSINESS_YEAR_CANCELATION_MONTH = 9
 IMAGES = {'status_100': '/static/juntagrico/img/status_100.png',
             'status_75': '/static/juntagrico/img/status_75.png',
