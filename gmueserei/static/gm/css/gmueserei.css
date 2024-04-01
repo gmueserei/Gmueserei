@@ -7,16 +7,6 @@ html, body {
   background-color: #f4f1ed;
 }
 
-
-/* mark tables */
-tr.odd {
-  background-color: #f1f1f1;
-}
-
-tr.even {
-  background-color: #fefefe;
-}
-
 /* activity list */
 div.activity-area-list-element {
 padding-bottom: 2em;
