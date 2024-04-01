@@ -10,11 +10,11 @@ html, body {
 
 /* mark tables */
 tr.odd {
-  background-color: #f1f1f1 !important;
+  background-color: #f1f1f1;
 }
 
 tr.even {
-  background-color: #fefefe !important;
+  background-color: #fefefe;
 }
 
 td {
