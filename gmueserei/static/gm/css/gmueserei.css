@@ -1,13 +1,2 @@
 /****************************************/
 /* Settings for Gmueserei look and feel */
-
-html, body {
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
-  color: #5d4a3e;
-  background-color: #f4f1ed;
-}
-
-/* activity list */
-div.activity-area-list-element {
-padding-bottom: 2em;
-}
