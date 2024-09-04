@@ -36,9 +36,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    'juntagrico',
-    'impersonate',
     'gmueserei',
+    'juntagrico',
+    'fontawesomefree',  # benötigt ab 1.6
+    'import_export',  # benötigt ab 1.6
+    'impersonate',
     'crispy_forms',
     'adminsortable2',
     'polymorphic'
@@ -146,8 +148,10 @@ IMPERSONATE = {
     'REDIRECT_URL': '/my/profile',
 }
 
-LOGIN_REDIRECT_URL = "/my/home"
+###LOGIN_REDIRECT_URL = "/my/home" #gültig vor Version 1.6
+LOGIN_REDIRECT_URL = "/"
 
+IMPORT_EXPORT_EXPORT_PERMISSION_CODE = 'view' #neu in 1.6
 
 # Default Django Storage API behavior - don't overwrite files with same name
 MEDIA_ROOT = 'media'
@@ -169,8 +173,15 @@ ORGANISATION_BANK_CONNECTION = {"PC" : " ",
             "BIC" : "ABSOCH22",
             "NAME" : "Alternative Bank Schweiz",
             "ESR" : "ESR Number"}
-INFO_EMAIL = "mini@gmueserei.ch"
-SERVER_URL = "gmueserei.ch"
+###INFO_EMAIL = "mini@gmueserei.ch" #gültig vor Version 1.6
+CONTACTS = {
+    "general": "mini@gmueserei.ch"
+}
+###SERVER_URL = "gmueserei.ch" #gültig vor Version 1.6
+ORGANISATION_WEBSITE = {
+    'name': "www.gmueserei.ch",
+    'url': "https://www.gmueserei.chg"
+}
 BUSINESS_REGULATIONS = ""
 BYLAWS = "https://www.gmueserei.ch/index.php?page=dokumente"
 STYLES = {'static': ['gm/css/personal.css','gm/css/gmueserei.css']}
