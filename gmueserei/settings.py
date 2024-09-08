@@ -180,7 +180,7 @@ CONTACTS = {
 ###SERVER_URL = "gmueserei.ch" #gültig vor Version 1.6
 ORGANISATION_WEBSITE = {
     'name': "www.gmueserei.ch",
-    'url': "https://www.gmueserei.chg"
+    'url': "https://www.gmueserei.ch"
 }
 BUSINESS_REGULATIONS = ""
 BYLAWS = "https://www.gmueserei.ch/index.php?page=dokumente"
