@@ -1,6 +1,7 @@
 {% extends "mails/email.txt" %}
 {% load juntagrico.config %}
 {% block content %}
+{% juntagrico.config "organisation_address" as addr%}
 Nicht vergessen:
 
 Am {{ job.time |date:"d.m.Y H:i" }}-{{ job.end_time|date:"H:i" }} findet dein {% config "organisation_name" %}-Arbeitseinsatz "{{ job.type.displayed_name }}" statt.
@@ -13,6 +14,8 @@ Teilnehmer:        {{ participants }}
 Verantwortlich:  {{ contact }}
 
 Wir freuen uns, dich zu sehen und zählen auf dich!
+
+Bei Fragen oder kurzfristiger Verhinderung kannst du das Gartenteam telefonisch erreichen unter {{ addr.phone }}.
 
 Herzlich grüsst,
 dein {% juntagrico.config "organisation_name" %}-Team
