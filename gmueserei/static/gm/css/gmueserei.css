@@ -12,6 +12,10 @@ table {
   background-color: #f4f1ed;
 }
 
+th {
+  background-color: #d7d4d1 !important;
+}
+
 tr.odd {
   background-color: #f1f1f1 !important;
 }
@@ -20,7 +24,7 @@ tr.even {
   background-color: #fefefe !important;
 }
 
-th, td {
+td {
   border: 1px solid #5d4a3e;
 }
 
