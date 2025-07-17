@@ -15,7 +15,7 @@ Ort:             {{ job.type.location }}
 
 Wir freuen uns, dich zu sehen und zählen auf dich!
 
-Bei Fragen oder kurzfristiger Verhinderung kannst Du das Gartenteam telefonisch erreichen unter {{ addr.phone }}.
+Bei Fragen oder kurzfristiger Verhinderung kannst du das Gartenteam telefonisch erreichen unter {{ addr.phone }}.
 
 Herzlich grüsst,
 dein {% juntagrico.config "organisation_name" %}-Team
