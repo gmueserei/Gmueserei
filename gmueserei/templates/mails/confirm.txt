@@ -6,5 +6,5 @@ Bestätigungslink: {{ serverurl }}/my/confirm/{{ hash }}
 
 
 Herzlich grüsst,
-die {% config "organisation_name" %}-Betriebsgruppe
+die {% juntagrico.config "organisation_name" %}-Betriebsgruppe
 {% endblock %}
