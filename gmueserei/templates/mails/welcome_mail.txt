@@ -2,7 +2,7 @@
 {% load config %}
 {% block content %}
 {% juntagrico.config "billing" as billing%}
-Wir freuen uns, dich bei {% config "organisation_name" %} zu begrüssen.
+Wir freuen uns, dich bei {% juntagrico.config "organisation_name" %} zu begrüssen.
 
 {% juntagrico.config "organisation_name" %} ist ein genossenschaftlich organisierter Garten – 100 Leute produzieren gemeinsam ihr feines Bio-Gemüse. Jedes Mitglied der Genossenschaft kauft mindestens einen Anteilschein à {% juntagrico.config "share_price" %} Franken. Damit finanziert {% juntagrico.config "organisation_name" %} die Infrastruktur. Somit bist du MiteigentümerIn des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen. Bei Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
 
@@ -40,5 +40,5 @@ Bestätigungslink: {{ serverurl }}/my/confirm/{{ hash }}
 
 Für weitere Fragen schaust du in den FAQ (http://{% config "server_url" %}{% juntagrico.config "faq_doc" %}) nach oder schreibst eine Mail an {% juntagrico.config "info_email" %}.
 
-Bis bald und liebe Grüsse die {% config "organisation_name" %}-Betriebsgruppe
+Bis bald und liebe Grüsse die {% juntagrico.config "organisation_name" %}-Betriebsgruppe
 {% endblock %}
