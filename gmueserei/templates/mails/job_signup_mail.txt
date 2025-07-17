@@ -1,6 +1,7 @@
 {% extends "mails/email.txt" %}
 {% load juntagrico.config %}
 {% block content %}
+{% juntagrico.config "organisation_address" as addr%}
 Achtung:
 
 Du hast dich für den {% juntagrico.config "organisation_name" %}-Arbeitseinsatz "{{ job.type.displayed_name }}" um {{ job.time |date:"d.m.Y H:i" }}-{{ job.end_time|date:"H:i" }} eingeschrieben.
@@ -13,6 +14,8 @@ Teilnehmer:        {{ participants }}
 Ort:             {{ job.type.location }}
 
 Wir freuen uns, dich zu sehen und zählen auf dich!
+
+Bei Fragen oder kurzfristiger Verhinderung kannst Du das Gartenteal telefonisch erreichen unter {{ addr.phone }}.
 
 Herzlich grüsst,
 dein {% juntagrico.config "organisation_name" %}-Team
