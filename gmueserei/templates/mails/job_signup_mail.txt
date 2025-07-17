@@ -17,6 +17,8 @@ Wir freuen uns, dich zu sehen und zählen auf dich!
 
 Bei Fragen oder kurzfristiger Verhinderung kannst du das Gartenteam telefonisch erreichen unter {{ addr.phone }}.
 
+{% trans "Link zu dienem Einsatz" %}: {{ serverurl }}{% url 'job' job.id %}
+
 Herzlich grüsst,
 dein {% juntagrico.config "organisation_name" %}-Team
 {% endblock %}
