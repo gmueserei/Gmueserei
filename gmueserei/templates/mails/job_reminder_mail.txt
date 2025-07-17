@@ -15,5 +15,5 @@ Verantwortlich:  {{ contact }}
 Wir freuen uns, dich zu sehen und zählen auf dich!
 
 Herzlich grüsst,
-dein {% config "organisation_name" %}-Team
+dein {% juntagrico.config "organisation_name" %}-Team
 {% endblock %}
