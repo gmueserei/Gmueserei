@@ -8,6 +8,10 @@ html, body {
 }
 
 /* mark tables */
+table {
+  background-color: #f4f1ed;
+}
+
 tr.odd {
   background-color: #f1f1f1 !important;
 }
@@ -23,4 +27,19 @@ td {
 /* activity list */
 div.activity-area-list-element {
 padding-bottom: 2em;
+}
+
+/* new elements in juntagrico 1.7.x */
+#filter-table_wrapper > div.table-sticky-row {
+  background-color: #f4f1ed;
+}
+
+#filter-table th {
+  background-color: #f4f1ed;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
