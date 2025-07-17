@@ -16,6 +16,7 @@ Bitte zahle den Betrag für den/die Anteilschein/e auf das folgende Konto ein:
         {% endif %}    
         {{ addr.street }} {{ addr.number }}
         {{ addr.zip }} {{ addr.city }}
+        T: {{ addr.phone }}
         {% config "organisation_bank_connection" as bank%}
         {{ bank.NAME }}
         Postkonto-Nummer: {{ bank.PC }}
