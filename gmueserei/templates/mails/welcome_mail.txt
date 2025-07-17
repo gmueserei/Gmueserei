@@ -1,5 +1,5 @@
 {% extends "mails/email.txt" %}
-{% load config %}
+{% load juntagrico.config %}
 {% block content %}
 {% juntagrico.config "billing" as billing%}
 Wir freuen uns, dich bei {% juntagrico.config "organisation_name" %} zu begrüssen.
