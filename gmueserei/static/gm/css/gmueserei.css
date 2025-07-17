@@ -16,11 +16,11 @@ th {
   background-color: #d7d4d1 !important;
 }
 
-tr.odd {
+tr.odd, tr:nth-child(odd) {
   background-color: #f1f1f1 !important;
 }
 
-tr.even {
+tr.even, tr:nth-child(even) {
   background-color: #fefefe !important;
 }
 
