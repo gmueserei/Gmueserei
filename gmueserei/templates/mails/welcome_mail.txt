@@ -1,15 +1,15 @@
 {% extends "mails/email.txt" %}
 {% load config %}
 {% block content %}
-{% config "billing" as billing%}
+{% juntagrico.config "billing" as billing%}
 Wir freuen uns, dich bei {% config "organisation_name" %} zu begrüssen.
 
-{% config "organisation_name" %} ist ein genossenschaftlich organisierter Garten – 100 Leute produzieren gemeinsam ihr feines Bio-Gemüse. Jedes Mitglied der Genossenschaft kauft mindestens einen Anteilschein à {% config "share_price" %} Franken. Damit finanziert {% config "organisation_name" %} die Infrastruktur. Somit bist du MiteigentümerIn des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen. Bei Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
+{% juntagrico.config "organisation_name" %} ist ein genossenschaftlich organisierter Garten – 100 Leute produzieren gemeinsam ihr feines Bio-Gemüse. Jedes Mitglied der Genossenschaft kauft mindestens einen Anteilschein à {% juntagrico.config "share_price" %} Franken. Damit finanziert {% juntagrico.config "organisation_name" %} die Infrastruktur. Somit bist du MiteigentümerIn des Gemüsebetriebs und kannst bei vielen Entscheidungen mitbestimmen. Bei Austritt aus der Genossenschaft bekommst du deinen Anteilschein zurück erstattet.
 
 Bitte zahle den Betrag für den/die Anteilschein/e auf das folgende Konto ein:
 {% if not billing %}
         Bitte zahle den Betrag für den/die Anteilschein/e auf das folgende Konto ein:
-        {% config "organisation_address" as addr%}
+        {% juntagrico.config "organisation_address" as addr%}
         {{ addr.name }}
         {% if addr.extra %}
             {{ addr.extra }}
@@ -38,7 +38,7 @@ Damit wir dich als Mitglied freishalten können nutze den Bestätigungslink um d
 Bestätigungslink: {{ serverurl }}/my/confirm/{{ hash }}
 {% endif %}
 
-Für weitere Fragen schaust du in den FAQ (http://{% config "server_url" %}{% config "faq_doc" %}) nach oder schreibst eine Mail an {% config "info_email" %}.
+Für weitere Fragen schaust du in den FAQ (http://{% config "server_url" %}{% juntagrico.config "faq_doc" %}) nach oder schreibst eine Mail an {% juntagrico.config "info_email" %}.
 
 Bis bald und liebe Grüsse die {% config "organisation_name" %}-Betriebsgruppe
 {% endblock %}
