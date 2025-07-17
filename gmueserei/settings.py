@@ -168,7 +168,7 @@ ORGANISATION_ADDRESS = {"name":"Genossenschaft GMÜESEREI SISSACH",
             "number" : "25f",
             "zip" : "4450",
             "city" : "Sissach",
-            "extra" : ""}
+            "extra" : "T 078 480 35 99"}
 ORGANISATION_BANK_CONNECTION = {"PC" : " ",
             "IBAN" : "CH1408390035190010009",
             "BIC" : "ABSOCH22",
