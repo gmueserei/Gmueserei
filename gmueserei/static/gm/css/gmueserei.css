@@ -20,7 +20,7 @@ tr.even {
   background-color: #fefefe !important;
 }
 
-td {
+th, td {
   border: 1px solid #5d4a3e;
 }
 
@@ -41,5 +41,5 @@ padding-bottom: 2em;
 .btn-secondary {
   color: #fff;
   background-color: #6c757d;
-  border-color: #6c757d;
+  border-color: #5d4a3e;
 }
