@@ -8,7 +8,7 @@ Statuten: {{ serverurl }}{% juntagrico.config "bylaws" %}
 Betriebsreglement: {{ serverurl }}{% config "business_regulations" %}
 
 
-Unter {% config "adminportal_server_url" %} kannst du dich ab sofort für Jobs anmelden und vieles mehr.
+Unter {% juntagrico.config "adminportal_server_url" %} kannst du dich ab sofort für Jobs anmelden und vieles mehr.
 {% if password is not None %}
 Email: {{ username }}
 Passwort: {{ password }}
