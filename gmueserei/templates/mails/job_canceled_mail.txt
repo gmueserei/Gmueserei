@@ -1,6 +1,7 @@
 {% extends "mails/email.txt" %}
 {% load juntagrico.config %}
 {% block content %}
+{% juntagrico.config "organisation_address" as addr%}
 
 Dein {% juntagrico.config "organisation_name" %}-Arbeitseinsatz "{{ job.type.displayed_name }}"  um {{ job.time |date:"d.m.Y H:i" }}-{{ job.end_time|date:"H:i" }} wurde leider Abgesagt.
 
@@ -10,7 +11,9 @@ Job:             {{ job.type.description }}
 Zeit:            {{ job.time |date:"d.m.Y H:i" }}-{{ job.end_time|date:"H:i" }}
 Ort:             {{ job.type.location }}
 
-Es tut uns leid und hoffen dich bei einem anderen Einsatz wieder zu sehen!
+Es tut uns leid und wir hoffen, dich bei einem anderen Einsatz wieder zu sehen!
+
+Wenn du dich kurzfristig abgemeldet hast, dann kontaktiere doch bitte das Gartenteam unter {{ addr.phone }}.
 
 Herzlich grüsst,
 dein {% juntagrico.config "organisation_name" %}-Team
