@@ -2,7 +2,7 @@
 {% load juntagrico.config %}
 {% block content %}
 
-Dein {% config "organisation_name" %}-Arbeitseinsatz "{{ job.type.displayed_name }}"  um {{ job.time |date:"d.m.Y H:i" }}-{{ job.end_time|date:"H:i" }} wurde leider Abgesagt.
+Dein {% juntagrico.config "organisation_name" %}-Arbeitseinsatz "{{ job.type.displayed_name }}"  um {{ job.time |date:"d.m.Y H:i" }}-{{ job.end_time|date:"H:i" }} wurde leider Abgesagt.
 
 Details:
 
@@ -13,5 +13,5 @@ Ort:             {{ job.type.location }}
 Es tut uns leid und hoffen dich bei einem anderen Einsatz wieder zu sehen!
 
 Herzlich grüsst,
-dein {% config "organisation_name" %}-Team
+dein {% juntagrico.config "organisation_name" %}-Team
 {% endblock %}
