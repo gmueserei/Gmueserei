@@ -73,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.tz',
                 'django.template.context_processors.request',
                 'django.contrib.messages.context_processors.messages',
+                'juntagrico.context_processors.vocabulary',
             ],
             'loaders': [
                 'django.template.loaders.filesystem.Loader',
@@ -230,4 +231,9 @@ STORAGES = {
         "BACKEND": "django.contrib.staticfiles.storage.ManifestStaticFilesStorage",
     },
 }
-# BILLS_USERMENU = False
+
+REQUIRED_SHARES = 1
+ALLOW_JOB_UNSUBSCRIBE = True
+ENABLE_NOTIFICATIONS = []
+DISABLE_NOTIFICATIONS = []
+
